@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style3.css">
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, cursive;
+}
+
+header {
+    background-color:rgb(50, 50, 50);
+    color: aliceblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo a {
+   text-decoration: none;
+   transition: color 0.5s;
+   color: aliceblue;
+}
+
+.logo :hover {
+    color: #ffa500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height:3px;
+    width: 25px;
+    margin: 3px 0;
+    color: white;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin: 2rem 0;
+}
+
+@media (max-width:786px) {
+       .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(50, 50, 50);
+        flex-direction: column;
+        display: none;
+        width: 100%;
+       }
+
+       .nav-links.active {
+        display: flex;
+       }
+
+       .menu-toggle {
+        display: flex;
+       }
+}
+
+footer {
+    background-color: rgb(50, 50, 50);
+    color: #fff;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer-links li {
+    margin: 0 10rem;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 0.5rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.5s;
+}
+
+.footer-links a:hover {
+    color: #ffa500;
+}
+</style>
+</head>
+<body>
+    <header>
+      <nav>
+        <div class="logo"><a href="#logo">&copy;GiggleToons</a></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+ </header>
+
+   <main>
+    <section id="home">
+        <h1>Welcome On our Webpage</h1>
+        <p>This World belongs to you</p>
+    </section>
+    <section id="About">
+        <h2>About</h2>
+        <p>Brings Laugh With Giggletoons</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Contact us on &copy;siddharthsingh!gmail.com</p>
+    </section>
+    <section id="service">
+        <h2>Services we Provide</h2>
+        <p>24/7 Funny Content</p>
+    </section>
+   </main>
+   <footer>
+    <div class="footer-content">
+        <p>&copy;MyGiiggleToons..All right reserverd.&hearts;  2024</p>
+        <ul class="footer-links">
+            <li><a href="Help">Help</a></li>
+            <li><a href="#linkedin">Linkedin</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#Instagram">Instagram</a></li>
+        </ul>
+    </div>
+   </footer>
+    
+</body>
+</html>
